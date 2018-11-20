@@ -10,8 +10,8 @@ import 'admission/infoSession.dart';
 import 'admission/works.dart';
 import 'alumni/alumniActivites.dart';
 import 'alumni/alumniAssociation.dart';
-import 'news&events/events.dart';
-import 'news&events/news.dart';
+import 'newsevents/events.dart';
+import 'newsevents/news.dart';
 import 'curriculum/courses.dart';
 import 'curriculum/overview.dart';
 import 'curriculum/regulations.dart';
@@ -38,11 +38,22 @@ class DrawerWidget extends StatelessWidget{
       _createListTile(context, "FAQ", new FAQ())
     ]);
 
-    var curriculumExpandTile = null;
+    var curriculumExpandTile = _createExpansionTile(context, 'Curriculum', <Widget>[
+      _createListTile(context, "Programme Overview", new Overview()),
+      _createListTile(context, "Courses", new Courses()),
+      _createListTile(context, "Duration of Study & Class Schedule", new Schedule()),
+      _createListTile(context, "Regulation and Syllabus", new Regulation())
+    ]);
 
-    var alumniExpandTile = null;
+    var alumniExpandTile = _createExpansionTile(context, "Graduate & Alumni", <Widget>[
+      _createListTile(context, "Alumni Association", new AlumniAssoiation()),
+      _createListTile(context, "Alumni Activites", new AlumniActivites())
+    ]);
 
-    var neweventExpandTile = null;
+    var newExpandTile = _createExpansionTile(context, "News & Events", <Widget>[
+      _createListTile(context, "News", new News()),
+      _createListTile(context, "Events", new Events())
+    ]);
 
     // TODO: implement drawer list
     return new Drawer(
@@ -64,7 +75,7 @@ class DrawerWidget extends StatelessWidget{
           admissionExpandTile,
           curriculumExpandTile,
           alumniExpandTile,
-          neweventExpandTile
+          newExpandTile
         ],
       ),
     );

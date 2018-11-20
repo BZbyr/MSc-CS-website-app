@@ -1,4 +1,0 @@
-#Tue Nov 20 14:06:39 HKT 2018
-base.0=/Users/boyang/Code/flutter_app_hku/build/app/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
