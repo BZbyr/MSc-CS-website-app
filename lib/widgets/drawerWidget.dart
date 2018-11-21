@@ -55,7 +55,6 @@ class DrawerWidget extends StatelessWidget{
       _createListTile(context, "Events", new Events())
     ]);
 
-    // TODO: implement drawer list
     return new Drawer(
       child: new ListView(
         padding: EdgeInsets.zero,
