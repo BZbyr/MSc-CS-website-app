@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_hku/widgets/drawerWidget.dart';
 
 class Overview extends StatelessWidget{
-  final String appTitle = 'HKU Sample';
+  final String appTitle = 'Programme Overview';
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,9 @@ class MyHomePage extends StatelessWidget{
         title: new Text(title),
       ),
       body: new Center(child: new Text("overview")),
+      drawer: new Drawer(
+        child: new DrawerWidget(),
+      ),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_hku/widgets/drawerWidget.dart';
 
 class MessageDirector extends StatelessWidget{
   final String appTitle = 'HKU Sample message';
@@ -26,7 +27,12 @@ class MyHomePage extends StatelessWidget{
       appBar: new AppBar(
         title: new Text(title),
       ),
-      body: new Center(child: new Text("message director")),
+      body: new Center(
+          child: new Text("message director")
+      ),
+      drawer: new Drawer(
+        child: new DrawerWidget(),
+      ),
     );
   }
 }

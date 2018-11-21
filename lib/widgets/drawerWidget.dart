@@ -3,12 +3,12 @@ import 'about/aboutHKU.dart';
 import 'about/faculty.dart';
 import 'about/messageDirector.dart';
 import 'admission/admissionReq.dart';
-import 'admission/applicationProducures.dart';
+import 'admission/applicationProcedures.dart';
 import 'admission/compositionFees.dart';
 import 'admission/faq.dart';
 import 'admission/infoSession.dart';
 import 'admission/works.dart';
-import 'alumni/alumniActivites.dart';
+import 'alumni/alumniActivities.dart';
 import 'alumni/alumniAssociation.dart';
 import 'newsevents/events.dart';
 import 'newsevents/news.dart';
@@ -31,7 +31,7 @@ class DrawerWidget extends StatelessWidget{
 
     var admissionExpandTile = _createExpansionTile(context, 'Admission', <Widget>[
       _createListTile(context, "Admission Requirements", new AdmissionReq()),
-      _createListTile(context, "Application Producures", new ApplicationProducures()),
+      _createListTile(context, "Application Producures", new ApplicationProcedures()),
       _createListTile(context, "Composition Fees", new CompositionFees()),
       _createListTile(context, "Works for Students and Graduates", new Works()),
       _createListTile(context, "Info Session", new InfoSession()),
@@ -46,8 +46,8 @@ class DrawerWidget extends StatelessWidget{
     ]);
 
     var alumniExpandTile = _createExpansionTile(context, "Graduate & Alumni", <Widget>[
-      _createListTile(context, "Alumni Association", new AlumniAssoiation()),
-      _createListTile(context, "Alumni Activites", new AlumniActivites())
+      _createListTile(context, "Alumni Association", new AlumniAssociation()),
+      _createListTile(context, "Alumni Activites", new AlumniActivities())
     ]);
 
     var newExpandTile = _createExpansionTile(context, "News & Events", <Widget>[
@@ -67,7 +67,7 @@ class DrawerWidget extends StatelessWidget{
               ),
             ),
             decoration: new BoxDecoration(
-              color: const Color.fromRGBO(255, 149, 3, 1.0),
+              color: const Color.fromRGBO(70, 151, 236, 1.0),
             ),
           ),
           aboutExpandTile,
