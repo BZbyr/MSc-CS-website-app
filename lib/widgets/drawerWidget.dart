@@ -3,15 +3,15 @@ import 'about/aboutHKU.dart';
 import 'about/faculty.dart';
 import 'about/messageDirector.dart';
 import 'admission/admissionReq.dart';
-import 'admission/applicationProducures.dart';
+import 'admission/applicationProcedures.dart';
 import 'admission/compositionFees.dart';
 import 'admission/faq.dart';
 import 'admission/infoSession.dart';
 import 'admission/works.dart';
-import 'alumni/alumniActivites.dart';
+import 'alumni/alumniActivities.dart';
 import 'alumni/alumniAssociation.dart';
-import 'news&events/events.dart';
-import 'news&events/news.dart';
+import 'newsevents/events.dart';
+import 'newsevents/news.dart';
 import 'curriculum/courses.dart';
 import 'curriculum/overview.dart';
 import 'curriculum/regulations.dart';
@@ -31,20 +31,30 @@ class DrawerWidget extends StatelessWidget{
 
     var admissionExpandTile = _createExpansionTile(context, 'Admission', <Widget>[
       _createListTile(context, "Admission Requirements", new AdmissionReq()),
-      _createListTile(context, "Application Producures", new ApplicationProducures()),
+      _createListTile(context, "Application Producures", new ApplicationProcedures()),
       _createListTile(context, "Composition Fees", new CompositionFees()),
       _createListTile(context, "Works for Students and Graduates", new Works()),
       _createListTile(context, "Info Session", new InfoSession()),
       _createListTile(context, "FAQ", new FAQ())
     ]);
 
-    var curriculumExpandTile = null;
+    var curriculumExpandTile = _createExpansionTile(context, 'Curriculum', <Widget>[
+      _createListTile(context, "Programme Overview", new Overview()),
+      _createListTile(context, "Courses", new Courses()),
+      _createListTile(context, "Duration of Study & Class Schedule", new Schedule()),
+      _createListTile(context, "Regulation and Syllabus", new Regulation())
+    ]);
 
-    var alumniExpandTile = null;
+    var alumniExpandTile = _createExpansionTile(context, "Graduate & Alumni", <Widget>[
+      _createListTile(context, "Alumni Association", new AlumniAssociation()),
+      _createListTile(context, "Alumni Activites", new AlumniActivities())
+    ]);
 
-    var neweventExpandTile = null;
+    var newExpandTile = _createExpansionTile(context, "News & Events", <Widget>[
+      _createListTile(context, "News", new News()),
+      _createListTile(context, "Events", new Events())
+    ]);
 
-    // TODO: implement drawer list
     return new Drawer(
       child: new ListView(
         padding: EdgeInsets.zero,
@@ -57,14 +67,14 @@ class DrawerWidget extends StatelessWidget{
               ),
             ),
             decoration: new BoxDecoration(
-              color: const Color.fromRGBO(255, 149, 3, 1.0),
+              color: const Color.fromRGBO(70, 151, 236, 1.0),
             ),
           ),
           aboutExpandTile,
           admissionExpandTile,
           curriculumExpandTile,
           alumniExpandTile,
-          neweventExpandTile
+          newExpandTile
         ],
       ),
     );
