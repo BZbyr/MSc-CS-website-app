@@ -35,11 +35,6 @@ class DrawerWidget extends StatelessWidget{
       _createListTile(context, "Alumni Activites", new AlumniActivities())
     ]);
 
-    var newExpandTile = _createExpansionTile(context, "News & Events", <Widget>[
-      _createListTile(context, "News", new News()),
-      _createListTile(context, "Events", new Events())
-    ]);
-
     return new Drawer(
       child: new ListView(
         padding: EdgeInsets.zero,
@@ -59,7 +54,7 @@ class DrawerWidget extends StatelessWidget{
           admissionExpandTile,
           curriculumExpandTile,
           alumniExpandTile,
-          newExpandTile
+          _createListTile(context, "Evens & News", new NewsEventsPage())
         ],
       ),
     );

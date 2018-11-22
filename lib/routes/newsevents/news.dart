@@ -1,35 +1,52 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_hku/widgets/drawerWidget.dart';
 
-class News extends StatelessWidget{
+class News extends StatelessWidget {
   final String appTitle = 'News';
 
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: appTitle,
-      home: new MyNewsPage(title: appTitle),
-    );
-  }
-}
-
-
-class MyNewsPage extends StatelessWidget{
-
-  final String title;
-
-  MyNewsPage({Key key, this.title}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(title),
-      ),
-      body: new Center(child: new Text("news")),
-      drawer: new Drawer(
-        child: new DrawerWidget(),
+    return new SingleChildScrollView(
+      child: new Column(
+       children: <Widget>[
+         new Card(
+           child: new Column(
+             mainAxisSize: MainAxisSize.min,
+             children: <Widget>[
+               new Stack(
+                 alignment: AlignmentDirectional.bottomStart,
+                 children: <Widget>[
+                   new Image.asset(
+                     'res/images/material_design_4.jpg',
+                     height: 192.0,
+                     fit: BoxFit.fill,
+                   ),
+                   new ListTile(
+                     title: new Text(
+                       'News 1',
+                       style: new TextStyle(color: Colors.white,fontSize: 24.0),
+                     ),
+                   )
+                 ],
+               ),
+               new ButtonTheme.bar(
+                 child: new ButtonBar(
+                   alignment: MainAxisAlignment.end,
+                   children: <Widget>[
+                     new IconButton(icon: new Icon(Icons.share, color: Colors.grey,), onPressed: (){})
+                   ],
+                 ),
+               )
+             ],
+           ),
+         )
+       ].map((Widget widget){
+         // add a little space between the widgets
+         return new Container(
+           padding: const EdgeInsets.symmetric(vertical: 4.0),
+           child: widget,
+         );
+      }).toList(),
       ),
     );
   }
