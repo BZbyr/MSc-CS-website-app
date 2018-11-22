@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_hku/widgets/drawerWidget.dart';
 
-class Works extends StatelessWidget{
-  final String appTitle = 'Words from Students and Graduates';
+class InfoSession extends StatelessWidget{
+  final String appTitle = 'Infomation Session';
 
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: appTitle,
-      home: new MyHomePage(title: appTitle),
+      home: new MyInfoSessionPage(title: appTitle),
     );
   }
 }
 
 
-class MyHomePage extends StatelessWidget{
+class MyInfoSessionPage extends StatelessWidget{
 
   final String title;
 
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyInfoSessionPage({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class MyHomePage extends StatelessWidget{
       appBar: new AppBar(
         title: new Text(title),
       ),
-      body: new Center(child: new Text("work")),
+      body: new Center(child: new Text("information session")),
       drawer: new Drawer(
         child: new DrawerWidget(),
       ),

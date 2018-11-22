@@ -8,17 +8,17 @@ class CompositionFees extends StatelessWidget{
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: appTitle,
-      home: new MyHomePage(title: appTitle),
+      home: new MyCompositionFeesPage(title: appTitle),
     );
   }
 }
 
 
-class MyHomePage extends StatelessWidget{
+class MyCompositionFeesPage extends StatelessWidget{
 
   final String title;
 
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyCompositionFeesPage({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

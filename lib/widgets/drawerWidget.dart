@@ -1,21 +1,6 @@
 import 'package:flutter/material.dart';
-import 'about/aboutHKU.dart';
-import 'about/faculty.dart';
-import 'about/messageDirector.dart';
-import 'admission/admissionReq.dart';
-import 'admission/applicationProcedures.dart';
-import 'admission/compositionFees.dart';
-import 'admission/faq.dart';
-import 'admission/infoSession.dart';
-import 'admission/works.dart';
-import 'alumni/alumniActivities.dart';
-import 'alumni/alumniAssociation.dart';
-import 'newsevents/events.dart';
-import 'newsevents/news.dart';
-import 'curriculum/courses.dart';
-import 'curriculum/overview.dart';
-import 'curriculum/regulations.dart';
-import 'curriculum/schedule.dart';
+import 'package:flutter_app_hku/routes/about/aboutHKU.dart';
+import 'package:flutter_app_hku/routes/index.dart';
 
 class DrawerWidget extends StatelessWidget{
 

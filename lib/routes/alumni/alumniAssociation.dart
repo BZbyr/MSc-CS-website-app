@@ -8,17 +8,17 @@ class AlumniAssociation extends StatelessWidget{
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: appTitle,
-      home: new MyHomePage(title: appTitle),
+      home: new MyAlumniAssociationPage(title: appTitle),
     );
   }
 }
 
 
-class MyHomePage extends StatelessWidget{
+class MyAlumniAssociationPage extends StatelessWidget{
 
   final String title;
 
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyAlumniAssociationPage({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_hku/widgets/drawerWidget.dart';
 
-class Overview extends StatelessWidget{
-  final String appTitle = 'Programme Overview';
+class Events extends StatelessWidget{
+  final String appTitle = 'Events';
 
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: appTitle,
-      home: new MyHomePage(title: appTitle),
+      home: new MyEventsPage(title: appTitle),
     );
   }
 }
 
 
-class MyHomePage extends StatelessWidget{
+class MyEventsPage extends StatelessWidget{
 
   final String title;
 
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyEventsPage({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class MyHomePage extends StatelessWidget{
       appBar: new AppBar(
         title: new Text(title),
       ),
-      body: new Center(child: new Text("overview")),
+      body: new Center(child: new Text("events")),
       drawer: new Drawer(
         child: new DrawerWidget(),
       ),
