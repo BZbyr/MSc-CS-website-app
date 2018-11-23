@@ -1,36 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_hku/widgets/drawerWidget.dart';
 
 class Faculty extends StatelessWidget{
   final String appTitle = 'Faculty';
 
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: appTitle,
-      home: new MyFaculty(title: appTitle),
+    return new ListView(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      children: [
+        new Column(
+          children: <Widget>[
+            new Text('The Department of Computer Science is committed to high-quality education and training of computing professionals at both the undergraduate and postgraduate levels. At the postgraduate level, we offer two taught programmes based on coursework, the MSc(CompSc) and the MSc(ECom&IComp), as well as the research-based MPhil and PhD programmes.'),
+            new Text(' '),
+            new Text('The academic staff is active in research and development in a variety of areas including databases, parallel and distributed computing, computer networks, computer graphics, algorithms and complexity, computer vision, multimedia, software engineering, statistical computing, information security and computer forensics, and legal aspects of computing. Some of our research results have been applied to the development of real software and systems. You will have these researchers as your inspiring teachers of the courses in this programme. Here are some of them.')
+          ],
+        ),
+      ],
+
     );
   }
-}
-
-class MyFaculty extends StatelessWidget{
-
-  final String title;
-
-  MyFaculty({Key key, this.title}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(title),
-      ),
-      body: new Center(child: new Text("faculty")),
-      drawer: new Drawer(
-        child: new DrawerWidget(),
-      ),
-    );
-  }
-
 }
