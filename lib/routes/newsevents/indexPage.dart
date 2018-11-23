@@ -24,6 +24,7 @@ class _NewsEventsPageState extends State<NewsEventsPage>{
       title: 'News & Events',
       tabs: tabs,
       widgets: widgets,
+      isScrollable: false,
     );
   }
 }

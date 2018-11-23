@@ -50,7 +50,7 @@ class DrawerWidget extends StatelessWidget{
               color: const Color.fromRGBO(70, 151, 236, 1.0),
             ),
           ),
-          aboutExpandTile,
+          _createListTile(context, "About", new AboutPage()),
           admissionExpandTile,
           curriculumExpandTile,
           alumniExpandTile,
