@@ -7,22 +7,6 @@ class DrawerWidget extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    var aboutExpandTile = _createExpansionTile(context, 'About', <Widget>[
-      _createListTile(context, "Faculty", new Faculty()),
-      _createListTile(context, "Message from Programme Director", new MessageDirector()),
-      _createListTile(context, "About HKU", new AboutHKU())
-      
-    ]);
-
-    var admissionExpandTile = _createExpansionTile(context, 'Admission', <Widget>[
-      _createListTile(context, "Admission Requirements", new AdmissionReq()),
-      _createListTile(context, "Application Producures", new ApplicationProcedures()),
-      _createListTile(context, "Composition Fees", new CompositionFees()),
-      _createListTile(context, "Works for Students and Graduates", new Works()),
-      _createListTile(context, "Info Session", new InfoSession()),
-      _createListTile(context, "FAQ", new FAQ())
-    ]);
-
     var curriculumExpandTile = _createExpansionTile(context, 'Curriculum', <Widget>[
       _createListTile(context, "Programme Overview", new Overview()),
       _createListTile(context, "Courses", new Courses()),
@@ -51,7 +35,7 @@ class DrawerWidget extends StatelessWidget{
             ),
           ),
           _createListTile(context, "About", new AboutPage()),
-          admissionExpandTile,
+          _createListTile(context, 'Admission', new AdmissionPage()),
           curriculumExpandTile,
           alumniExpandTile,
           _createListTile(context, "Evens & News", new NewsEventsPage())
