@@ -35,14 +35,6 @@ class TabbedScaffold extends StatelessWidget {
             );
           }).toList(),
         ),
-        floatingActionButton: new FloatingActionButton(
-          onPressed: () {
-            Scaffold
-                .of(context)
-                .showSnackBar(new SnackBar(content: new Text('Show Snackbar')));
-          },
-          child: new Icon(Icons.add, color: Colors.white),
-        ),
       ),
     );
   }

@@ -16,8 +16,8 @@ class _NewsEventsPageState extends State<NewsEventsPage>{
     final List<String> tabs = <String>['News', 'Events'];
 
     final List<Widget> widgets = <Widget>[
-      new Events(),
-      new News()
+      new News(),
+      new Events()
     ];
 
     return new TabbedScaffold(
