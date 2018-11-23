@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'drawerWidget.dart';
 
 class TabbedScaffold extends StatelessWidget {
-  TabbedScaffold({this.title, this.tabs, this.actions, this.widgets});
+  TabbedScaffold({this.title, this.tabs, this.actions, this.widgets,this.isScrollable});
 
   final String title;
   final List<String> tabs;
   final List<Widget> actions;
   final List<Widget> widgets;
+  final bool isScrollable;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class TabbedScaffold extends StatelessWidget {
           title: new Text(title),
           actions: (actions ?? null),
           bottom: new TabBar(
-            isScrollable: false,
+            isScrollable: isScrollable,
             tabs: tabs.map((String s) => new Tab(text: s)).toList(),
           ),
         ),
