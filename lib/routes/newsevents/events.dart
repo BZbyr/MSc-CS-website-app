@@ -16,7 +16,7 @@ class Events extends StatelessWidget{
                   alignment: AlignmentDirectional.bottomStart,
                   children: <Widget>[
                     new Image.asset(
-                        'res/images/material_design_4.jpg',
+                        'res/images/pic/material_design_4.jpg',
                         height: 192,
                         fit: BoxFit.fill,
                     ),

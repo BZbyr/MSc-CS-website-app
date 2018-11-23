@@ -16,7 +16,7 @@ class AboutHKU extends StatelessWidget{
             speed: 400,
             indicator: CircleSwiperIndicator(),
             children: <Widget>[
-              Image.asset("res/images/WhyHKU.jpg",fit: BoxFit.fill,),
+              Image.asset("res/images/pic/WhyHKU.jpg",fit: BoxFit.fill,),
             ],
           ),
         ),
