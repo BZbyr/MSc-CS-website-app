@@ -6,31 +6,17 @@ class InfoSession extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: appTitle,
-      home: new MyInfoSessionPage(title: appTitle),
-    );
-  }
-}
-
-
-class MyInfoSessionPage extends StatelessWidget{
-
-  final String title;
-
-  MyInfoSessionPage({Key key, this.title}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(title),
-      ),
-      body: new Center(child: new Text("information session")),
-      drawer: new Drawer(
-        child: new DrawerWidget(),
-      ),
+    return new ListView(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      children: [
+        new Column(
+          children: <Widget>[
+            new Text('Join us at the information sessions, and find out if the Master of Science in Computer Science Programme is the right fit for your career goals. Information Sessions include a programme overview and Q&A, plus the opportunity to talk informally with Programme Director and staff. Potential applicants are welcome.'),
+            new Text(' '),
+            new Text('Information sessions will be organized in Hong Kong and Mainland China. Details of these information sessions will be announced on our website and/or advertised online and in major local newspapers.')
+          ],
+        ),
+      ],
     );
   }
 }
