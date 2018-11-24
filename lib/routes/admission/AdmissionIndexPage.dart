@@ -13,7 +13,7 @@ class _AdmissionState extends State<AdmissionPage>{
   @override
   Widget build(BuildContext context) {
     
-    final List<String> tabs = <String>['Admission Requirements', 'Application Procedures','Composition Fees','Works from Students and Gradutes', 'Information Session', 'FAQ'];
+    final List<String> tabs = <String>['Admission Requirements', 'Application Procedures','Composition Fees','Works from Students and Gradutes', 'Information Session'];
 
     final List<Widget> widgets = <Widget>[
       new AdmissionReq(),
@@ -21,7 +21,6 @@ class _AdmissionState extends State<AdmissionPage>{
       new CompositionFees(),
       new Works(),
       new InfoSession(),
-      new FAQ()
     ];
 
     return new TabbedScaffold(
