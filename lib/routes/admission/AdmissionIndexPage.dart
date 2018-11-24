@@ -12,7 +12,7 @@ class _AdmissionState extends State<AdmissionPage>{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    
     final List<String> tabs = <String>['Admission Requirements', 'Application Procedures','Composition Fees','Works from Students and Gradutes', 'Information Session', 'FAQ'];
 
     final List<Widget> widgets = <Widget>[

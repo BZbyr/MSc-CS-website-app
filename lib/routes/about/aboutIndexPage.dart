@@ -12,7 +12,7 @@ class _AboutPageState extends State<AboutPage>{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    
     final List<String> tabs = <String>['About HKU', 'Message from Programme Director','Faculty'];
 
     final List<Widget> widgets = <Widget>[
