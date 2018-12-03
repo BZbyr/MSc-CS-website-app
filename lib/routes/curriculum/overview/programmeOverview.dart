@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ProgramOverview extends StatelessWidget{
+class ProgrammeOverview extends StatelessWidget{
   final String appTitle = 'About HKU';
 
   @override
