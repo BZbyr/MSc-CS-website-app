@@ -13,11 +13,6 @@ class DrawerWidget extends StatelessWidget{
       _createListTile(context, "Regulation and Syllabus", new Regulation())
     ]);
 
-    var alumniExpandTile = _createExpansionTile(context, "Graduate & Alumni", <Widget>[
-      _createListTile(context, "Alumni Association", new AlumniAssociation()),
-      _createListTile(context, "Alumni Activites", new AlumniActivities())
-    ]);
-
     return new Drawer(
       child: new ListView(
         padding: EdgeInsets.zero,
@@ -36,7 +31,7 @@ class DrawerWidget extends StatelessWidget{
           _createListTile(context, "About", new AboutPage()),
           _createListTile(context, 'Admission', new AdmissionPage()),
           curriculumExpandTile,
-          alumniExpandTile,
+          _createListTile(context, "Graduate & Alumni", new AlumniPage()),
           _createListTile(context, "Evens & News", new NewsEventsPage())
         ],
       ),
