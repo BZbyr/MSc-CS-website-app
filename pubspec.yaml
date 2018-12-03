@@ -43,6 +43,7 @@ flutter:
     - res/images/pic/
     - res/images/logos/
     - res/images/teachers/
+    - res/images/news/
     - res/images/students/work/
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
