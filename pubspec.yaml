@@ -45,6 +45,7 @@ flutter:
     - res/images/teachers/
     - res/images/news/
     - res/images/logos/
+    - res/images/alumniActivity/
     - res/images/students/work/
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
