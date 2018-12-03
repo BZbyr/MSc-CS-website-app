@@ -165,7 +165,7 @@ class RecipeCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        new Text(recipe.name, style: titleStyle, softWrap: false, overflow: TextOverflow.ellipsis),
+                        new Text(recipe.name, style: titleStyle),
                         new Text(recipe.author, style: authorStyle),
                       ],
                     ),
