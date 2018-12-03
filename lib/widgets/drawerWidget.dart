@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_hku/routes/about/aboutHKU.dart';
 import 'package:flutter_app_hku/routes/index.dart';
 
 class DrawerWidget extends StatelessWidget{

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_hku/widgets/drawerWidget.dart';
 
 class News extends StatelessWidget {
   final String appTitle = 'News';
