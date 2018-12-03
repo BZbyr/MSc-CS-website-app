@@ -17,6 +17,7 @@ class Regulation extends StatelessWidget{
 class MyRegulationsPage extends StatelessWidget{
 
   final String title;
+  final TextStyle titleStyle = const TextStyle(fontSize: 24.0, fontWeight: FontWeight.w600);
 
   MyRegulationsPage({Key key, this.title}) : super(key: key);
 
@@ -27,7 +28,22 @@ class MyRegulationsPage extends StatelessWidget{
       appBar: new AppBar(
         title: new Text(title),
       ),
-      body: new Center(child: new Text("regulation")),
+      body: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        children: [
+          new Column(
+            children: <Widget>[
+              new Text('\nREGULATIONS\n',style: titleStyle,),
+              new Text('1. General Regulations of The University\n'),
+              new Text('https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf\n\n'),
+              new Text("2. University's Regulations for Taught Postgraduate Curricula: \n"),
+              new Text('https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/tpg-regulations.pdf\n\n'),
+              new Text('3. Degree Regulations of MSc(CompSc)\n'),
+              new Text('The regulations and syllabus are applicable to students admitted to the curriculum in 2018-2019 and thereafter.')
+            ],
+          ),
+        ],
+      ),
       drawer: new Drawer(
         child: new DrawerWidget(),
       ),

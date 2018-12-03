@@ -32,7 +32,6 @@ class AboutHKU extends StatelessWidget{
           ],
         ),
       ],
-
     );
   }
 }
