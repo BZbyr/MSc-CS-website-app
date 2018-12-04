@@ -96,7 +96,11 @@ class _RecipeGridPageState extends State<RecipeGridPage> {
             (BuildContext context, int index) {
               switch(index){
                 case 0:
-                  return new Text('When you enrol in the MSc(CompSc) Programme, you gain all the advantages of a famous university with an outstanding reputation. When you leave our Programme, you will have a solid foundation in the theoretical aspect of computer science, together with hands-on technical experience in information technology, to help you begin a rewarding career.\n\n But a master’s programme does not have to be the last chapter of your learning merely technical, hard-core information technology; it can serve as a springboard to other career opportunities and learning challenges. For example, many of our graduates who find themselves moving into management, may continue their studies towards an MBA degree, while others may go on to doctoral studies here at HKU or elsewhere.\n\n Some of our students and graduates would also like to share their experience with you.');
+                  return ListView(
+                    children: <Widget>[
+                      new Text('\nWhen you enrol in the MSc(CompSc) Programme, you gain all the advantages of a famous university with an outstanding reputation. When you leave our Programme, you will have a solid foundation in the theoretical aspect of computer science, together with hands-on technical experience in information technology, to help you begin a rewarding career.\n\n But a master’s programme does not have to be the last chapter of your learning merely technical, hard-core information technology; it can serve as a springboard to other career opportunities and learning challenges. For example, many of our graduates who find themselves moving into management, may continue their studies towards an MBA degree, while others may go on to doctoral studies here at HKU or elsewhere.\n\n Some of our students and graduates would also like to share their experience with you.'),
+                    ],
+                  );
                   break;
               }
               final Recipe recipe = widget.recipes[index-1];

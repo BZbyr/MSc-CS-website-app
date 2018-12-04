@@ -4,7 +4,7 @@ import 'package:flutter_app_hku/widgets/swiper.dart';
 
 class HomePage extends StatelessWidget {
 
-  final String appTitle = 'HKU Sample';
+  final String appTitle = 'MSc(CS)';
 
   @override
   Widget build(BuildContext context) {
