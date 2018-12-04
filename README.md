@@ -1,8 +1,9 @@
 # flutter_app_hku
 
-A new Flutter application.
+A new Flutter application for COMP7509 Smart Phone Apps Developmnet Group Project.
 
 ## Getting Started
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+### install fultter
+ 
+See fullter official website for details [flutter_install](https://flutter.io/docs/get-started/install).
